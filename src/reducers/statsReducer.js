@@ -19,7 +19,7 @@ export const statsReducer = (stats = initialState, action) => {
                 return {...stats, subscribe: stats.subscribe + 1};
             else if (fType === "subscribe" && uType === 'dec')
                 return {...stats, subscribe: stats.subscribe - 1};
-            else {console.log('Probably wrong parameters for updateStatsAction');
+            else {console.log('Probably wrong arguments for updateStatsAction');
                 break;
             }
         }
